@@ -7,7 +7,7 @@ public abstract class NodStructuraIerarhica {
 	public abstract String getPost();
 	public abstract double getSalariu();
 	
-	//metoda pentru afisarea datelor unui anagajat
+	//metoda pentru afisarea datelor unui angajat
 	public String getInfo(){
 		return this.getNume() + " - "+ this.getPost();
 	}

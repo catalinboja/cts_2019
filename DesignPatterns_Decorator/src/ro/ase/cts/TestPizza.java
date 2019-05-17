@@ -10,9 +10,12 @@ public class TestPizza {
 		DecoratorPizzaTaraneasca pizzaTaraneasca = new DecoratorPizzaTaraneasca(pizzaSimpla);
 		DecoratorPizzaExotica pizzaExotica = new DecoratorPizzaExotica(pizzaSimpla);
 		
+		AbstractPizza exoticAndTraditional = new DecoratorPizzaTaraneasca(pizzaExotica);
+		
 		System.out.println(pizzaSimpla.getIngrediente());
 		System.out.println(pizzaTaraneasca.getIngrediente());
 		System.out.println(pizzaExotica.getIngrediente());
+		System.out.println(exoticAndTraditional.getIngrediente());
 
 		System.out.println(pizzaSimpla.getIngrediente());
 		//decorate ther simple pizza by ading ham
